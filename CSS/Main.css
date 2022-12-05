@@ -1,0 +1,36 @@
+/* Подключение шрифтов */
+
+@font-face {
+    font-family: "K2D";
+    src: url("../FONT/K2D/K2D-Bold.ttf");
+}
+
+/* Сброс стилей */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    background: #1E1E1E;
+}
+
+/* Шапка сайта */
+
+.header-logo {
+    position: absolute;
+    top: 30px;
+    left: 388px;
+    width: 153px;
+    height: 52px;
+    color:  #FFFFFF;
+    font-family: 'K2D';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+}
+
+.logo-x { color: #1CC500; }
+
