@@ -3,6 +3,8 @@
 @font-face {
     font-family: "K2D";
     src: url("../FONT/K2D/K2D-Bold.ttf");
+    font-style: normal;
+    font-weight: 700;
 }
 
 /* Сброс стилей */
@@ -25,12 +27,26 @@
     width: 153px;
     height: 52px;
     color:  #FFFFFF;
-    font-family: 'K2D';
-    font-style: normal;
-    font-weight: 700;
+    font-family: "K2D";
     font-size: 40px;
     line-height: 52px;
 }
 
 .logo-x { color: #1CC500; }
 
+/* Стили для иконок в правой части шапки */
+
+.search-and-market-group-icon img {
+    width: 42.17px;
+    height: 40.25px;
+}
+
+.search-and-market-group-icon img:nth-child(1) { 
+    margin-right: 57.92px; 
+}
+
+.search-and-market-group-icon {
+    float: right;
+    margin-top: 30px;
+    margin-right: 342.92px;
+}
