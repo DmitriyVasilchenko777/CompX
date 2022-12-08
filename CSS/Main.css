@@ -23,7 +23,7 @@
 .header-logo {
     position: absolute;
     top: 30px;
-    left: 388px;
+    left: 194px;
     width: 153px;
     height: 52px;
     color:  #FFFFFF;
@@ -34,6 +34,8 @@
 
 .logo-x { color: #1CC500; }
 
+.header-logo, .logo-x:hover { cursor: pointer; }
+
 /* Стили для иконок в правой части шапки */
 
 .search-and-market-group-icon img {
@@ -41,12 +43,38 @@
     height: 40.25px;
 }
 
-.search-and-market-group-icon img:nth-child(1) { 
-    margin-right: 57.92px; 
+.search-and-market-group-icon img:hover { 
+    cursor: pointer; 
+    transform: scale(1.2);
+    transition: all .4s ease;
 }
+
+.search-and-market-group-icon img:not(:hover) { 
+    cursor: pointer; 
+    transform: scale(1);
+    transition: all .4s ease;
+}
+
+/* Оброщяемся к иконке поиска и делаем ей отступ с права от иконки маркета */
+
+.search-and-market-group-icon img:nth-child(1) { margin-right: 57.92px; }
+
+/* Блок для позиционирования иконок в правой части шапки */
 
 .search-and-market-group-icon {
     float: right;
     margin-top: 30px;
-    margin-right: 342.92px;
+    margin-right: 194px;
+}
+
+/* Делаем так чтобы новые элементы выводились с новой строчки и не позиционировались с права */
+
+.clear { clear: both; }
+
+/* Стили для горизонтальной линии внутри шапки */
+
+header hr {
+    position: relative;
+    top: 40px;
+    border: 1px solid #ffffff;
 }
