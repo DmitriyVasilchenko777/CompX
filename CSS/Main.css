@@ -74,7 +74,22 @@
 /* Стили для горизонтальной линии внутри шапки */
 
 header hr {
-    position: relative;
-    top: 40px;
+    margin-top: 40px;
     border: 1px solid #ffffff;
 }
+
+/* =================================================================== */
+
+/* Стили для основной части сайта */
+
+.news-block {
+    margin-top: 70px;
+    height: 43px;
+    background: #1CC500;
+    font-family: "K2D";
+    font-size: 33px;
+    line-height: 42.9px;
+    color: #ffffff;
+}
+
+.news-block marquee { background: #1CC500; }
