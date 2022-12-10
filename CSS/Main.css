@@ -26,7 +26,7 @@
     left: 194px;
     width: 153px;
     height: 52px;
-    color:  #FFFFFF;
+    color:  #ffffff;
     font-family: "K2D";
     font-size: 40px;
     line-height: 52px;
@@ -82,7 +82,7 @@ header hr {
 
 /* Стили для основной части сайта */
 
-.news-block {
+.new-block {
     margin-top: 70px;
     height: 43px;
     background: #1CC500;
@@ -92,4 +92,44 @@ header hr {
     color: #ffffff;
 }
 
-.news-block marquee { background: #1CC500; }
+/* Стили для бегущей строки */
+
+marquee { background: #1CC500; }
+
+/* Карусель и навигация */
+
+.container-nav-and-carusel {
+    margin-top: 70px;
+}
+
+/* Стили для элементов навигации по сайту с левой стороны */
+
+.nav-container ul li a {
+    display: block;
+    width: 270px;
+    margin-left: 130px;
+    padding: 15px;
+    text-align: center;
+    border-top: 1.5px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+    list-style-type: none;
+    color: #ffffff;
+    font-family: "K2D";
+    font-weight: 300;
+    font-size: 30px;
+}
+
+/* Уменьшаем верхнею рамку элемента над текстом модели */
+
+.nav-container ul li a:nth-child(1) { border-top: 1px solid #ffffff; }
+
+/* Добавляем эффект при навидении */
+
+.nav-container ul li a:hover {
+    background: #1CC500;
+    transition: background 500ms;
+}
+
+.nav-container ul li a:not(:hover) { transition: background 500ms; }
