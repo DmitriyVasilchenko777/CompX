@@ -99,12 +99,13 @@ marquee { background: #1CC500; }
 /* Карусель и навигация */
 
 .container-nav-and-carusel {
+    display: flex;
     margin-top: 70px;
 }
 
 /* Стили для элементов навигации по сайту с левой стороны */
 
-.nav-container ul li a {
+.nav-container nav ul li a {
     display: block;
     width: 270px;
     margin-left: 130px;
@@ -123,13 +124,48 @@ marquee { background: #1CC500; }
 
 /* Уменьшаем верхнею рамку элемента над текстом модели */
 
-.nav-container ul li a:nth-child(1) { border-top: 1px solid #ffffff; }
+.nav-container nav ul li a:nth-child(1) { border-top: 1px solid #ffffff; }
 
 /* Добавляем эффект при навидении */
 
-.nav-container ul li a:hover {
+.nav-container nav ul li a:hover {
     background: #1CC500;
     transition: background 500ms;
 }
 
-.nav-container ul li a:not(:hover) { transition: background 500ms; }
+.nav-container nav ul li a:not(:hover) { transition: background 500ms; }
+
+/* Стили для блока карусели */
+
+.carusel-container { margin-left: 50px; }
+
+/* Скрытие всех слайдов */
+
+.carusel-container .photos img {
+    width: 860px;
+    display: none;
+}
+
+/* Отоброжение первого элемента слайда */
+
+.carusel-container .photos img:first-child { display: block; } 
+
+/* Создание кнопок переключателей */
+
+.photos { position: relative; }
+
+.radio-button-group {
+    position: absolute;
+    top: 400px;
+    left: 400px;
+}
+
+.radio-button-group span {
+    display: inline-block;
+    width: 20px;
+    margin-right: 5px;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #ffffff;
+}
+
