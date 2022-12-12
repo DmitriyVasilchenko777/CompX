@@ -90,11 +90,12 @@ header hr {
     font-size: 33px;
     line-height: 42.9px;
     color: #ffffff;
+    /* transform: skew(5deg, 1.3deg); */
 }
 
 /* Стили для бегущей строки */
 
-marquee { background: #1CC500; }
+marquee  { background-color: #1CC500; }
 
 /* Карусель и навигация */
 
@@ -168,4 +169,3 @@ marquee { background: #1CC500; }
     background: #ffffff;
     color: #ffffff;
 }
-
