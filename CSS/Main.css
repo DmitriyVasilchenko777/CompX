@@ -82,7 +82,9 @@ header hr {
 
 /* Стили для основной части сайта */
 
-.new-block {
+/* Стили для бегущей строки */
+
+.green-new-block {
     margin-top: 70px;
     height: 43px;
     background: #1CC500;
@@ -90,12 +92,10 @@ header hr {
     font-size: 33px;
     line-height: 42.9px;
     color: #ffffff;
-    /* transform: skew(5deg, 1.3deg); */
+    transform: skew(1deg, 1.1deg);
 }
 
-/* Стили для бегущей строки */
-
-marquee  { background-color: #1CC500; }
+.green-new-block span { background: #1CC500; }
 
 /* Карусель и навигация */
 
@@ -159,7 +159,7 @@ marquee  { background-color: #1CC500; }
     position: absolute;
     top: 400px;
     left: 400px;
-}
+} 
 
 .radio-button-group span {
     display: inline-block;
@@ -168,4 +168,4 @@ marquee  { background-color: #1CC500; }
     border-radius: 50%;
     background: #ffffff;
     color: #ffffff;
-}
+} 
