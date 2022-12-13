@@ -7,6 +7,13 @@
     font-weight: 700;
 }
 
+@font-face {
+    font-family: "RussoOnce";
+    src: url("../FONT/RussoOnce/RussoOne-Regular.ttf");
+    font-style: normal;
+    font-weight: 400;
+}
+
 /* Сброс стилей */
 
 * {
@@ -119,8 +126,8 @@ header hr {
     list-style-type: none;
     color: #ffffff;
     font-family: "K2D";
-    font-weight: 300;
-    font-size: 30px;
+    font-weight: 600;
+    font-size: 29px;
 }
 
 /* Уменьшаем верхнею рамку элемента над текстом модели */
@@ -144,6 +151,7 @@ header hr {
 
 .carusel-container .photos img {
     width: 860px;
+    height: 500px;
     display: none;
 }
 
@@ -157,7 +165,7 @@ header hr {
 
 .radio-button-group {
     position: absolute;
-    top: 400px;
+    top: 470px;
     left: 400px;
 } 
 
@@ -169,3 +177,37 @@ header hr {
     background: #ffffff;
     color: #ffffff;
 } 
+
+/* Добавление  текста на изображение */
+
+.photo-text-container {
+    position: absolute;
+    top: 350px;
+    left: 20px;
+    background: transparent;
+}
+
+/* Оброщяемся к самому тексту и добовляем шрифт также убираем задний фон */
+
+.photo-text-container span {
+    display: block;
+    font-family: "RussoOnce";
+    color: #ffffff;
+    background: transparent;
+}
+
+/* Меняем размер текста */
+
+.photo-text-container span[class=text-1] { font-size: 21px; }
+
+.photo-text-container span[class=text-2] { 
+    font-size: 13.5px;
+    margin-top: 10px; 
+}
+
+/* Выделяем цену в зеленый цвет */
+
+.photo-text-container span[class=text-2] span[class=green-price] { 
+    display: inline;
+    color: #1CC500; 
+}
