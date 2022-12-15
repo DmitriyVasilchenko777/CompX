@@ -178,6 +178,13 @@ header hr {
     color: #ffffff;
 } 
 
+/* Оброщяемся к первой кнопке преключателя и меняем его цвет */
+
+.radio-button-group span:first-child { 
+    background: #1CC500; 
+    color: #1CC500;
+}
+
 /* Добавление  текста на изображение */
 
 .photo-text-container {
@@ -210,4 +217,16 @@ header hr {
 .photo-text-container span[class=text-2] span[class=green-price] { 
     display: inline;
     color: #1CC500; 
+}
+
+/* Добавляем зеленую закладку в верхний левый угол на изображении */
+
+.photos .green-poligon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: #1cc500;
+    clip-path: polygon(0% 0%, 100% 0%, 53.38% 46.63%, 0% 100%);
 }
