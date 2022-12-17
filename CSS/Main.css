@@ -167,6 +167,7 @@ header hr {
     position: absolute;
     top: 470px;
     left: 400px;
+    background: transparent;
 } 
 
 .radio-button-group span {
