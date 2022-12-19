@@ -1,0 +1,12 @@
+.green-new-block {
+    margin-top: 70px;
+    height: 43px;
+    background: #1CC500;
+    font-family: "K2D";
+    font-size: 33px;
+    line-height: 42.9px;
+    color: #ffffff;
+    transform: skew(1deg, 1.1deg);
+}
+
+.green-new-block span { background: #1CC500; }

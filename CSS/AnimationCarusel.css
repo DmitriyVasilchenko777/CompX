@@ -1,0 +1,35 @@
+@keyframes ShowSlides {
+    0% {
+      display: block;
+      opacity: 0;
+      visibility: hidden;
+    }
+    
+    100% {
+      display: block;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  .photos img {
+    animation-name: ShowSlides;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+  }
+
+  /* Добавление анимации текста */
+
+  .photo-text-container span {
+    animation-name: ShowSlides;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+  }

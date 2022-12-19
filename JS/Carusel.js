@@ -15,24 +15,37 @@ let indexImg = 0;
 
 // Отслеживаем нажатия на переключатели
 RADIO_BTN_ONE.onclick = () => {
+
+    /*
+        Используем indexImg = 0 для обнуления setInterval таким образом чтобы он продолжался с того элемента  
+        на котором было произведено нажатие и продолжал менять слайды и цвет чекбоксов
+    */
+
+    indexImg = 0;
+
+    // Меняем цвет текста и фон нажатой кнопки
     RADIO_BTN_ONE.style.background = "#1CC500";
     RADIO_BTN_ONE.style.color = "#1CC500";
 
+    // Остальные две кнопки меняем на белый цвет
     RADIO_BTN_TWO.style.background = "#ffffff";
     RADIO_BTN_TWO.style.color = "#ffffff";
 
     RADIO_BTN_THREE.style.background = "#ffffff";
     RADIO_BTN_THREE.style.color = "#ffffff";
 
+    // Отображаем текст 
     TEXT_ONE_IN_CARUSEL.style.display = "block";
     TEXT_TWO_IN_CARUSEL.style.display = "block";
 
-    IMAGES[0].style.display = "block"
-    IMAGES[1].style.display = "none"
-    IMAGES[2].style.display = "none"
+    // Отображаем первый слайд а остальные два скрываем 
+    IMAGES[0].style.display = "block";
+    IMAGES[1].style.display = "none";
+    IMAGES[2].style.display = "none";
 }
 
 RADIO_BTN_TWO.onclick = () => {
+    indexImg = 1;
     
     RADIO_BTN_TWO.style.background = "#1CC500";
     RADIO_BTN_TWO.style.color = "#1CC500";
@@ -45,13 +58,14 @@ RADIO_BTN_TWO.onclick = () => {
 
     IMAGES[1].style.display = "block";
     IMAGES[0].style.display = "none";
+    IMAGES[2].style.display = "none";
 
     TEXT_ONE_IN_CARUSEL.style.display = "none";
     TEXT_TWO_IN_CARUSEL.style.display = "none";
 }
 
 RADIO_BTN_THREE.onclick = () => {
-    clearInterval(INTERVAL);
+    indexImg = 2
 
     RADIO_BTN_THREE.style.background = "#1CC500";
     RADIO_BTN_THREE.style.color = "#1CC500";
@@ -118,5 +132,5 @@ const INTERVAL = setInterval(() => {
     }
 
     IMAGES[indexImg].style.display = "block";
-
-}, 5000);
+    
+}, 7000);

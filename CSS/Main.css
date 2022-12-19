@@ -1,3 +1,11 @@
+/* Импорт других css файлов */
+
+@import url("./SiteHeader.css");
+@import url("./Navigation.css");
+@import url("./GreenLine.css");
+@import url("./Carusel.css");
+@import url("./AnimationCarusel.css");
+
 /* Подключение шрифтов */
 
 @font-face {
@@ -25,209 +33,11 @@
     background: #1E1E1E;
 }
 
-/* Шапка сайта */
-
-.header-logo {
-    position: absolute;
-    top: 30px;
-    left: 194px;
-    width: 153px;
-    height: 52px;
-    color:  #ffffff;
-    font-family: "K2D";
-    font-size: 40px;
-    line-height: 52px;
-}
-
-.logo-x { color: #1CC500; }
-
-.header-logo, .logo-x:hover { cursor: pointer; }
-
-/* Стили для иконок в правой части шапки */
-
-.search-and-market-group-icon img {
-    width: 42.17px;
-    height: 40.25px;
-}
-
-.search-and-market-group-icon img:hover { 
-    cursor: pointer; 
-    transform: scale(1.2);
-    transition: all .4s ease;
-}
-
-.search-and-market-group-icon img:not(:hover) { 
-    cursor: pointer; 
-    transform: scale(1);
-    transition: all .4s ease;
-}
-
-/* Оброщяемся к иконке поиска и делаем ей отступ с права от иконки маркета */
-
-.search-and-market-group-icon img:nth-child(1) { margin-right: 57.92px; }
-
-/* Блок для позиционирования иконок в правой части шапки */
-
-.search-and-market-group-icon {
-    float: right;
-    margin-top: 30px;
-    margin-right: 194px;
-}
-
-/* Делаем так чтобы новые элементы выводились с новой строчки и не позиционировались с права */
-
-.clear { clear: both; }
-
-/* Стили для горизонтальной линии внутри шапки */
-
-header hr {
-    margin-top: 40px;
-    border: 1px solid #ffffff;
-}
-
-/* =================================================================== */
-
 /* Стили для основной части сайта */
 
-/* Стили для бегущей строки */
-
-.green-new-block {
-    margin-top: 70px;
-    height: 43px;
-    background: #1CC500;
-    font-family: "K2D";
-    font-size: 33px;
-    line-height: 42.9px;
-    color: #ffffff;
-    transform: skew(1deg, 1.1deg);
-}
-
-.green-new-block span { background: #1CC500; }
-
-/* Карусель и навигация */
+/* Стили для блока контейнера лля элиментов навигации и карусели */
 
 .container-nav-and-carusel {
     display: flex;
     margin-top: 70px;
-}
-
-/* Стили для элементов навигации по сайту с левой стороны */
-
-.nav-container nav ul li a {
-    display: block;
-    width: 270px;
-    margin-left: 130px;
-    padding: 15px;
-    text-align: center;
-    border-top: 1.5px solid #ffffff;
-    border-right: 1px solid #ffffff;
-    border-bottom: 1px solid #ffffff;
-    border-left: 1px solid #ffffff;
-    list-style-type: none;
-    color: #ffffff;
-    font-family: "K2D";
-    font-weight: 600;
-    font-size: 29px;
-}
-
-/* Уменьшаем верхнею рамку элемента над текстом модели */
-
-.nav-container nav ul li a:nth-child(1) { border-top: 1px solid #ffffff; }
-
-/* Добавляем эффект при навидении */
-
-.nav-container nav ul li a:hover {
-    background: #1CC500;
-    transition: background 500ms;
-}
-
-.nav-container nav ul li a:not(:hover) { transition: background 500ms; }
-
-/* Стили для блока карусели */
-
-.carusel-container { margin-left: 50px; }
-
-/* Скрытие всех слайдов */
-
-.carusel-container .photos img {
-    width: 860px;
-    height: 500px;
-    display: none;
-}
-
-/* Отоброжение первого элемента слайда */
-
-.carusel-container .photos img:first-child { display: block; } 
-
-/* Создание кнопок переключателей */
-
-.photos { position: relative; }
-
-.radio-button-group {
-    position: absolute;
-    top: 470px;
-    left: 400px;
-    background: transparent;
-} 
-
-.radio-button-group span {
-    display: inline-block;
-    width: 20px;
-    margin-right: 5px;
-    border-radius: 50%;
-    background: #ffffff;
-    color: #ffffff;
-} 
-
-/* Оброщяемся к первой кнопке преключателя и меняем его цвет */
-
-.radio-button-group span:first-child { 
-    background: #1CC500; 
-    color: #1CC500;
-}
-
-/* Добавление  текста на изображение */
-
-.photo-text-container {
-    position: absolute;
-    top: 350px;
-    left: 20px;
-    background: transparent;
-}
-
-/* Оброщяемся к самому тексту и добовляем шрифт также убираем задний фон */
-
-.photo-text-container span {
-    display: block;
-    font-family: "RussoOnce";
-    color: #ffffff;
-    background: transparent;
-}
-
-/* Меняем размер текста */
-
-.photo-text-container span[class=text-1] { font-size: 21px; }
-
-.photo-text-container span[class=text-2] { 
-    font-size: 13.5px;
-    margin-top: 10px; 
-}
-
-/* Выделяем цену в зеленый цвет */
-
-.photo-text-container span[class=text-2] span[class=green-price] { 
-    display: inline;
-    color: #1CC500; 
-}
-
-/* Добавляем зеленую закладку в верхний левый угол на изображении */
-
-.photos .green-poligon {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100px;
-    height: 100px;
-    background-color: #1cc500;
-    clip-path: polygon(0% 0%, 100% 0%, 53.38% 46.63%, 0% 100%);
 }

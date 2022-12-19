@@ -1,0 +1,86 @@
+.carusel-container { margin-left: 50px; }
+
+/* Скрытие всех слайдов */
+
+.carusel-container .photos img {
+    width: 860px;
+    height: 500px;
+    display: none;
+}
+
+/* Отоброжение первого элемента слайда */
+
+.carusel-container .photos img:first-child { display: block; } 
+
+/* Создание кнопок переключателей */
+
+.photos { position: relative; }
+
+.radio-button-group {
+    position: absolute;
+    top: 470px;
+    left: 400px;
+    background: transparent;
+} 
+
+.radio-button-group span {
+    display: inline-block;
+    width: 20px;
+    margin-right: 5px;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #ffffff;
+} 
+
+/* Оброщяемся к первой кнопке преключателя и меняем его цвет */
+
+.radio-button-group span:first-child { 
+    background: #1CC500; 
+    color: #1CC500;
+}
+
+/* Добавление текста на изображение */
+
+.photo-text-container {
+    position: absolute;
+    top: 350px;
+    left: 20px;
+    background: transparent;
+}
+
+/* Оброщяемся к самому тексту и добовляем шрифт также убираем задний фон */
+
+.photo-text-container span {
+    display: block;
+    font-family: "RussoOnce";
+    color: #ffffff;
+    background: transparent;
+}
+
+/* Меняем размер текста */
+
+.photo-text-container span[class=text-1] { font-size: 21px; }
+
+.photo-text-container span[class=text-2] { 
+    font-size: 13.5px;
+    margin-top: 10px; 
+}
+
+/* Выделяем цену в зеленый цвет */
+
+.photo-text-container span[class=text-2] span[class=green-price] { 
+    display: inline;
+    color: #1CC500; 
+}
+
+/* Добавляем зеленую закладку в верхний левый угол на изображении */
+
+.photos .green-poligon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: #1cc500;
+    clip-path: polygon(0% 0%, 100% 0%, 53.38% 46.63%, 0% 100%);
+}

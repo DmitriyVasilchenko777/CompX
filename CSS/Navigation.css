@@ -1,0 +1,29 @@
+.nav-container nav ul li a {
+    display: block;
+    width: 270px;
+    margin-left: 130px;
+    padding: 15px;
+    text-align: center;
+    border-top: 1.5px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+    list-style-type: none;
+    color: #ffffff;
+    font-family: "K2D";
+    font-weight: 600;
+    font-size: 29px;
+}
+
+/* Уменьшаем верхнею рамку элемента над текстом модели */
+
+.nav-container nav ul li a:nth-child(1) { border-top: 1px solid #ffffff; }
+
+/* Добавляем эффект при навидении */
+
+.nav-container nav ul li a:hover {
+    background: #1CC500;
+    transition: background 500ms;
+}
+
+.nav-container nav ul li a:not(:hover) { transition: background 500ms; }
