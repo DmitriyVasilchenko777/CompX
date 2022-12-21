@@ -10,8 +10,8 @@
     border-left: 1px solid #ffffff;
     list-style-type: none;
     color: #ffffff;
-    font-family: "K2D";
-    font-weight: 600;
+    font-family: "K2D", sans-serif;
+    font-weight: 500;
     font-size: 29px;
 }
 

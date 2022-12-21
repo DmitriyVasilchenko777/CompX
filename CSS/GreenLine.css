@@ -6,7 +6,11 @@
     font-size: 33px;
     line-height: 42.9px;
     color: #ffffff;
-    transform: skew(1deg, 1.1deg);
+    transform: skew(0deg, 1deg);
 }
 
 .green-new-block span { background: #1CC500; }
+
+/* Стили для второй зеленой линии с новым товаром */
+
+.two-green-line { transform: skew(0deg, -1deg); }
