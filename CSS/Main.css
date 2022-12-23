@@ -98,7 +98,7 @@
 
 /* Обращение ко всем элементам продукта компьютеров */
 
-.product-pc-container .product { color: #ffffff; }
+.product-pc-container .product { color: #ffffff; height: 40%;}
 
 /* Общие стили для текста внутри карточки товара компьютера */
 
@@ -125,4 +125,111 @@
     margin-top: 10px;
     padding: 10px;
     width: 279px;
+}
+
+.product button:hover { 
+    cursor: pointer;
+    background: gray;
+    transition: all .4s ease;
+}
+
+.product button:not(:hover) { 
+    cursor: pointer; 
+    transition: all .4s ease;
+}
+
+/* Стили для секции переферия */
+
+.perefery-label {
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 43px;
+    letter-spacing: 0em;
+    font-family: "K2D", sans-serif;
+    font-style: normal;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Изображения для секции  переферия */
+
+.perefery-product-container {
+    display: flex;
+    justify-content: space-around;
+    height: 300px;
+    margin-bottom: 200px;
+}
+
+.perefery-product-container .perefery-product img { border-bottom: 3px solid #ffffff; }
+
+.perefery-product-container .perefery-product { background: black; }
+
+/* Стили для надписей */
+
+.perefery-product-container .perefery-product h2 {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 25px;
+    background: transparent;
+    font-family: "K2D", sans-serif;
+    font-weight: 600;
+}
+
+/* Добовляем эффект при навидении */
+
+.perefery-product-container .perefery-product:hover {
+    cursor: pointer;
+    background: #1CC500;
+    transition: all .3s ease;
+}
+
+.perefery-product-container .perefery-product:not(:hover) {
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+/* Елемент "Смотреть все" */
+
+.view-all {
+    color: #ffffff;
+    font-family: "K2D", sans-serif;
+    font-weight: 600;
+    width: 279px;
+    height: 300px;
+    background: black;
+}
+
+.view-all .circle {
+    background: transparent;
+    width: 55%;
+    height: 55%;
+    margin: 0 auto;
+    margin-top: 30px;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+}
+
+/* Стили для стрелки */
+
+.circle img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+/* Текст внутри блока "Выбрать все" */
+
+.view-all p {
+    font-family: "K2D", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    background: transparent;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.circle {
+    
 }
