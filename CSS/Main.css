@@ -159,7 +159,7 @@
     display: flex;
     justify-content: space-around;
     height: 300px;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
 }
 
 .perefery-product-container .perefery-product img { border-bottom: 3px solid #ffffff; }
@@ -211,15 +211,7 @@
     border-radius: 50%;
 }
 
-/* Стили для стрелки */
-
-.circle img {
-    display: block;
-    margin: 0 auto;
-    margin-top: 50px;
-}
-
-/* Текст внутри блока "Выбрать все" */
+/* Текст внутри блока "Смотеть все" */
 
 .view-all p {
     font-family: "K2D", sans-serif;
@@ -230,6 +222,60 @@
     margin-top: 40px;
 }
 
-.circle {
-    
+/* Стили для стрелки внутри круга */
+
+.circle .arrow {
+    display: block;
+    margin: 0 auto;
+    width: 45px;
+    height: 45px;
+    margin-top: 53px;
+    margin-left: 44px;
+    border-top: 7px solid #ffffff;
+    border-left: 7px solid #ffffff;
+    transform: rotate(130deg);
+    background: transparent;
+}
+
+/* Стили при навидении на элемент "Смотреть все" */
+
+.view-all:hover {
+    cursor: pointer;
+    background: #1CC500;
+    transition: all .4s ease;
+}
+
+.view-all:not(:hover) {
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+/* Секция с услугами */
+
+.services-label span {
+    display: block;
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 43px;
+    letter-spacing: 0em;
+    font-family: "K2D", sans-serif;
+    font-style: normal;
+    margin-bottom: 50px;
+}
+
+.services-container { display: flex; }
+
+/* Изображения в секции с услугами */
+
+.container-img-upgraide img, .container-img-traid-in img { width: 655px; }
+
+/* Текст на изображении */
+
+.container-img-upgraide span {
+    position: relative;
+    top: -200px;
+    right: -100px;
+    color: #ffffff;
 }
