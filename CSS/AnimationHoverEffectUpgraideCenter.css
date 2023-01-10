@@ -1,0 +1,47 @@
+@keyframes HoverEffectUpgraideCenter {
+    0% {
+      display: block;
+      opacity: 0;
+      visibility: visible;
+    }
+
+    100% {
+      display: block;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  @keyframes NotHoverEffectUpgraideCenter {
+    0% {
+      display: block;
+      opacity: 0;
+      visibility: visible;
+    }
+
+    100% {
+      display: block;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  .container-img-upgraide-center img:hover {
+    animation-name: HoverEffectUpgraideCenter;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+  }
+
+.container-img-upgraide-center img:not(:hover) {
+    animation-name: NotHoverEffectUpgraideCenter;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+  }

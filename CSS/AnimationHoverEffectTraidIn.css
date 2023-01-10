@@ -1,0 +1,47 @@
+@keyframes HoverEffectTraid {
+    0% {
+      display: block;
+      opacity: 0;
+      visibility: visible;
+    }
+
+    100% {
+      display: block;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  @keyframes NotHoverEffectTraid {
+    0% {
+      display: block;
+      opacity: 0;
+      visibility: visible;
+    }
+
+    100% {
+      display: block;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  .container-img-traid-in img:hover {
+    animation-name: HoverEffectTraid;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+  }
+
+  .container-img-traid-in img:not(:hover) {
+    animation-name: NotHoverEffectTraid;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+  }
