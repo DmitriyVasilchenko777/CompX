@@ -1,0 +1,118 @@
+/* Секция с услугами */
+
+.services-label span {
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 43px;
+    letter-spacing: 0em;
+    font-family: "K2D", sans-serif;
+    font-style: normal;
+}
+
+.services-container { display: flex; }
+
+.services-container img { width: 655px; }
+
+.services-container img:hover { cursor: pointer; }
+
+/* Эффект при навидении на первую картинку */
+
+.container-img-upgraide-center { overflow: hidden; }
+
+.container-img-upgraide-center img { transition: all 1.5s ease; }
+
+.container-img-upgraide-center img:hover { transform: scale(1.1); }
+
+/* Эффект при навидении на втарую картинку */
+
+.container-img-traid-in { overflow: hidden; }
+
+.container-img-traid-in img { transition: all 1.5s ease; }
+
+.container-img-traid-in img:hover { transform: scale(1.1); }
+
+/* Текст на изображении */
+
+.text-upgraid-center {
+    position: absolute;
+    top: 2450px;
+    right: 700px;
+    background: transparent;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 43px;
+    letter-spacing: 0em;
+    font-family: "K2D", sans-serif;
+    font-style: normal;
+}
+
+.text-details {
+    position: absolute;
+    top: 2490px;
+    background: transparent;
+    right: 805px;
+    color: #1CC500;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.text-details, .text-upgraid-center:hover { cursor: pointer; }
+
+/* Стрелка в надписи узнать подробнее */
+
+.arrow-details-upgraide-center {
+    display: block;
+    float: right;
+    margin-top: 7.5px;
+    margin-left: 5px;
+    width: 10px;
+    height: 10px;
+    border-top: 3px solid #1CC500;
+    border-left: 3px solid #1CC500;
+    transform: rotate(130deg);
+}
+
+/* Текст на изображении трейдинга */
+
+.text-traid-in {
+    position: absolute;
+    top: 2450px;
+    left: 700px;
+    background: transparent;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 43px;
+    letter-spacing: 0em;
+    font-family: "K2D", sans-serif;
+    font-style: normal;
+}
+
+.text-details-traid-in {
+    position: absolute;
+    top: 2490px;
+    background: transparent;
+    right: 405px;
+    color: #1CC500;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.text-traid-in, .text-details-traid-in { cursor: pointer; }
+
+.arrow-details-traid-in {
+    display: block;
+    float: right;
+    margin-top: 7.5px;
+    margin-left: 5px;
+    width: 10px;
+    height: 10px;
+    border-top: 3px solid #1CC500;
+    border-left: 3px solid #1CC500;
+    transform: rotate(130deg);
+}
