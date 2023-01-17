@@ -45,3 +45,11 @@
 /* Делаем цвет номера телефона зеленым цветом */
 
 .text-phone-number { color: #1CC500; }
+
+/* Добовляем эффекты при навидении */
+
+.footer-logo, .footer-x-logo:hover { cursor: pointer; }
+
+.text-privacy, .text-public-ofeta:hover { cursor: pointer; }
+
+.text-contact, .text-phone-number:hover { cursor: pointer; }
