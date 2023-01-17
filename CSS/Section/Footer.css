@@ -1,0 +1,47 @@
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    background: #000000;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-top: 2px solid #ffffff;
+}
+
+/* Стили для логотипа в секции footer */
+
+.footer-logo {
+    width: 153px;
+    height: 52px;
+    color:  #ffffff;
+    font-family: "K2D";
+    font-size: 40px;
+}
+
+.footer-x-logo { color: #1CC500; }
+
+/* Стили для текста в секции footer */
+
+.text-privacy, .text-public-ofeta {
+    background: #000000;
+    color: #ffffff;
+    font-family: "K2D", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 17px;
+}
+
+/* Стили для текста "контакты" */
+
+.text-contact {
+    text-align: center;
+    background: #000000;
+    color: #ffffff;
+    font-family: "K2D", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 17px;
+}
+
+/* Делаем цвет номера телефона зеленым цветом */
+
+.text-phone-number { color: #1CC500; }
